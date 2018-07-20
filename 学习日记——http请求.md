@@ -45,6 +45,8 @@
       
       method(post,get,delete,put,head,connect,options,trace)
       
+      post:可以对数据进行增删改查         get:可以对数据进行增删改查
+      
       1.get——请求指定的页面信息，并返回实体主体
       
       2.head——类似于get请求，只不过返回的响应中没有具体的内容，用于获取报头
@@ -62,5 +64,27 @@
       7.options——允许客户端查看服务器的性能
       
       8.trace——回显服务器收到的请求，主要用于测试或诊断
+      
+    https://www.apiopen.top/weatherApi?city=郑州
+    
+    协议  +     域名/IP      +路径 以？分割,？后面的为参数
+    
+    参数以=分割，=前面的是参数名  后面为参数值
+    
+    多个参数：参数与参数之间以&隔开
+    
+            get和post区别（面试必问）
+     
+     1.get的参数放在url的后面，是暴露的
+        
+        post的参数放在请求体当中，是隐藏的
+        
+        1KB =1024B    1B =8b
+      2.url的长度大小不能超过1KB
+      
+        get将所有的想要发送到服务器的内容都放到url中
+        
+        上传文件要使用post方法
+        
       
         
